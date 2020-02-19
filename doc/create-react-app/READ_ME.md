@@ -32,3 +32,8 @@ npm install --save source-map-explorer
 npm run build
 npm run analyze
 ```
+
+
+## Template
+- ts:
+  npx create-react-app my-app --template typescript
