@@ -142,7 +142,10 @@ export default () => {
         <h1 className="demo-title sm">Spin</h1>
         <div className="demo-wrapper">
           <Spin />
-          <Divider dashed />
+          <Divider orientation="left" dashed style={{fontSize: 12}}>
+            <Icon type="edit"/>
+            <span>带文字的分割线</span>
+          </Divider>
           <Spin
             tip="loading with 500 ms delay.."
             spinning={alertChecked}
