@@ -4,7 +4,7 @@ module.exports = [
         "type": "group",
         "group_detail": [
             {
-                "title": "通用",
+                "title": "导航",
                 "items": [
                     {
                         "title": "Menu 菜单",
@@ -13,7 +13,11 @@ module.exports = [
                     {
                         "title": "breadcrumb 面包屑",
                         "link": "breadcrumb"
-                    }
+                    },
+                    {
+                        "title": "Pagination 分页",
+                        "link": "pagination"
+                    },
                 ]
             },
             {
@@ -23,9 +27,21 @@ module.exports = [
                         "title": "Form 表单(checkbox, dropdown)",
                         "link": "formComponent"
                     },
-                ]
-                
-            }
+                    {
+                        "title": "Input, Spin",
+                        "link": "input"
+                    },
+                ]    
+            },
+            {
+                "title": "数据展示",
+                "items": [
+                    {
+                        "title": "Cards 卡片",
+                        "link": "card"
+                    },
+                ]    
+            }            
         ]
     }
 ]
