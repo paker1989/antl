@@ -31,6 +31,10 @@ module.exports = [
                         "title": "Input, Spin",
                         "link": "input"
                     },
+                    {
+                        "title": "Select",
+                        "link": "select"
+                    },
                 ]    
             },
             {
@@ -39,6 +43,10 @@ module.exports = [
                     {
                         "title": "Cards 卡片",
                         "link": "card"
+                    },
+                    {
+                        "title": "Comment 评论",
+                        "link": "comment"
                     },
                 ]    
             }            

@@ -44,4 +44,15 @@ export default [
     link: "card",
     source: lazy(() => import("../components/Container/Card/card"))
   },
+  {
+    "title": "Comment",
+    "link": "comment",
+    source: lazy(() => import("../components/Container/Comment/comment"))
+  },
+  {
+    "title": "Select",
+    "link": "select",
+    source: lazy(() => import("../components/Container/Select/select"))
+},
+
 ];

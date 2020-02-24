@@ -31,10 +31,10 @@ export default () => {
           total={400}
           itemRender={(page, type, originalE) => {
             if (type === "prev") {
-              return <a>Previous</a>;
+              return <span>Previous</span>;
             }
             if (type === "next") {
-              return <a>Next</a>;
+              return <span>Next</span>;
             }
             return originalE;
           }}
