@@ -45,14 +45,18 @@ export default [
     source: lazy(() => import("../components/Container/Card/card"))
   },
   {
-    "title": "Comment",
-    "link": "comment",
+    title: "Comment",
+    link: "comment",
     source: lazy(() => import("../components/Container/Comment/comment"))
   },
   {
-    "title": "Select",
-    "link": "select",
+    title: "Select",
+    link: "select",
     source: lazy(() => import("../components/Container/Select/select"))
-},
-
+  },
+  {
+    title: "Drawer",
+    link: "drawer",
+    source: lazy(() => import("../components/Container/Drawer/drawer"))
+  },
 ];
