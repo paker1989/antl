@@ -69,4 +69,14 @@ export default [
     link: "collapse",
     source: lazy(() => import("../components/Container/Collapse/collapse"))
   },
+  {
+    title: "Popover 气泡",
+    link: "popover",
+    source: lazy(() => import("../components/Container/Popover/popover"))
+  },
+  {
+    "title": "Slider",
+    "link": "slider",
+    source: lazy(() => import("../components/Container/Slider/slider"))
+},
 ];

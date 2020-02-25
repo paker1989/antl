@@ -35,6 +35,10 @@ module.exports = [
                         "title": "Select",
                         "link": "select"
                     },
+                    {
+                        "title": "Slider",
+                        "link": "slider"
+                    },
                 ]    
             },
             {
@@ -55,6 +59,10 @@ module.exports = [
                     {
                         "title": "Collapse 折叠面板",
                         "link": "collapse"
+                    },
+                    {
+                        "title": "Popover 气泡",
+                        "link": "popover"
                     },
                 ]    
             },
