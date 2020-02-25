@@ -48,6 +48,14 @@ module.exports = [
                         "title": "Comment 评论",
                         "link": "comment"
                     },
+                    {
+                        "title": "Empty 空状态",
+                        "link": "empty"
+                    },
+                    {
+                        "title": "Collapse 折叠面板",
+                        "link": "collapse"
+                    },
                 ]    
             },
             {

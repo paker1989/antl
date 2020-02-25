@@ -59,4 +59,14 @@ export default [
     link: "drawer",
     source: lazy(() => import("../components/Container/Drawer/drawer"))
   },
+  {
+    title: "Empty",
+    link: "empty",
+    source: lazy(() => import("../components/Container/Empty/empty"))
+  },
+  {
+    title: "Collapse",
+    link: "collapse",
+    source: lazy(() => import("../components/Container/Collapse/collapse"))
+  },
 ];
