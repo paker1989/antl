@@ -39,6 +39,10 @@ module.exports = [
                         "title": "Slider",
                         "link": "slider"
                     },
+                    {
+                        "title": "Cascader 级联选择",
+                        "link": "cascader"
+                    },
                 ]    
             },
             {

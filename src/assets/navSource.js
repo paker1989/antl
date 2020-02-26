@@ -78,5 +78,10 @@ export default [
     "title": "Slider",
     "link": "slider",
     source: lazy(() => import("../components/Container/Slider/slider"))
+  },
+  {
+    title: "Cascader",
+    link: "cascader",
+    source: lazy(() => import("../components/Container/Cascader/cascader"))
 },
 ];
