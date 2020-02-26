@@ -75,13 +75,23 @@ export default [
     source: lazy(() => import("../components/Container/Popover/popover"))
   },
   {
-    "title": "Slider",
-    "link": "slider",
+    title: "Slider",
+    link: "slider",
     source: lazy(() => import("../components/Container/Slider/slider"))
   },
   {
     title: "Cascader",
     link: "cascader",
     source: lazy(() => import("../components/Container/Cascader/cascader"))
-},
+  },
+  {
+    title: "Carousel",
+    link: "carousel",
+    source: lazy(() => import("../components/Container/Carousel/carousel"))
+  },
+  {
+    title: "List 列表",
+    link: "list",
+    source: lazy(() => import("../components/Container/List/list"))
+  }
 ];
