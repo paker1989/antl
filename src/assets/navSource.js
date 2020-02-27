@@ -93,5 +93,12 @@ export default [
     title: "List 列表",
     link: "list",
     source: lazy(() => import("../components/Container/List/list"))
+  },
+  {
+    title: "Descriptions",
+    link: "description",
+    source: lazy(() =>
+      import("../components/Container/Description/description")
+    )
   }
 ];
