@@ -80,6 +80,10 @@ module.exports = [
             title: "Descriptions 描述",
             link: "description"
           },
+          {
+            title: "Statistic 统计",
+            link: "statistic"
+          },
         ]
       },
       {
