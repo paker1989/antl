@@ -1,12 +1,14 @@
 import React from 'react';
 
-import { Typography, Row, Col, Statistic, Button, Icon, Card } from 'antd';
+import { Typography, Row, Col, Statistic, Button, Icon, Card, message } from 'antd';
 
 import './statistic.less';
 
 const { Title } = Typography;
 
 export default () => {
+    const deadline = Date.now() + 1000 * 10; 
+
     return (
         <div className="demo-statistic">
             <Title level={3}>Statistic</Title>
@@ -20,7 +22,8 @@ export default () => {
                                 <Statistic title="Active Users" value={112893} />
                             </Col>
                             <Col span={12}>
-                                <Statistic title="Account Balance (CNY)" value={112893} precision={2} />
+                                <Statistic title="Account Balance (CNY)" value={112893} precision={2}
+                                />
                                 <Button type="primary" style={{ marginTop: 20 }}>Recharge</Button>
                             </Col>
                         </Row>
@@ -62,6 +65,18 @@ export default () => {
                                 valueStyle={{ color: '#cf1322' }}
                                 prefix={<Icon type="arrow-down" />}
                                 suffix="%"
+                            />
+                        </Card>
+                    </Col>
+                    <Col span={12}>
+                        <Card>
+                            {/* <Card.Meta title="Statistic.CountDown" description="基本用法"/> */}
+                            <Statistic.Countdown
+                              title="CountDown"
+                              value={deadline}
+                              onFinish={() => {
+                                  message.success('count down finished');
+                              }}
                             />
                         </Card>
                     </Col>

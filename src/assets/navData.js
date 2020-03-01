@@ -42,7 +42,11 @@ module.exports = [
           {
             title: "Cascader 级联选择",
             link: "cascader"
-          }
+          },
+          {
+            title: "Upload 上传",
+            link: "upload",
+          },
         ]
       },
       {
@@ -51,6 +55,10 @@ module.exports = [
           {
             title: "Cards 卡片",
             link: "card"
+          },
+          {
+            title: "Table 表格",
+            link: "table"
           },
           {
             title: "Comment 评论",

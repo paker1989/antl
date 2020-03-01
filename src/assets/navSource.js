@@ -104,8 +104,16 @@ export default [
   {
     title: "Statistic",
     link: "statistic",
-    source: lazy(() =>
-      import("../components/Container/Statistic/statistic")
-    )
+    source: lazy(() => import("../components/Container/Statistic/statistic"))
   },
+  {
+    title: "Upload",
+    link: "upload",
+    source: lazy(() => import("../components/Container/Upload/upload"))
+  },
+  {
+    title: "Table",
+    link: "table",
+    source: lazy(() => import("../components/Container/Table/table"))
+  }
 ];
