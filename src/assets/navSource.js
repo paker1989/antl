@@ -115,5 +115,10 @@ export default [
     title: "Table",
     link: "table",
     source: lazy(() => import("../components/Container/Table/table"))
+  },
+  {
+    title: "PageHeader 页头",
+    link: "pageHeader",
+    source: lazy(() => import("../components/Container/PageHeader/pageHeader"))
   }
 ];

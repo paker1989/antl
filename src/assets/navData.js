@@ -92,6 +92,10 @@ module.exports = [
             title: "Statistic 统计",
             link: "statistic"
           },
+          {
+            title: "PageHeader 页头",
+            link: "pageHeader"
+          },
         ]
       },
       {
