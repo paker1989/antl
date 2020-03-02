@@ -8,6 +8,11 @@ import TableSelection from "./table.selection";
 import TableFilterSort from "./table.filtersort";
 import TableFilteredDropdown from './table.filteredDropdown';
 import TableFetchData from './table.fetchData';
+import TableExpand from './table.expand';
+import TableMergeCell from './table.mergecell';
+import TableChildren from './table.children';
+import TableEditable from './table.editable';
+import TableEditRow from './table.editRow';
 
 import "./table.less";
 
@@ -24,6 +29,11 @@ export default () => {
       <TableFilterSort/>
       <TableFilteredDropdown />
       <TableFetchData />
+      <TableExpand />
+      <TableMergeCell/>
+      <TableChildren/>
+      <TableEditable />
+      <TableEditRow/>
     </Fragment>
   );
 };

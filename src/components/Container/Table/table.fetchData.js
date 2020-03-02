@@ -85,6 +85,7 @@ export default class App extends React.Component {
         pagination={this.state.pagination}
         loading={this.state.loading}
         onChange={this.handleTableChange}
+        scroll={{ y: 200 }}
         // size="small"
       />
     );
