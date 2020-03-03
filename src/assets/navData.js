@@ -112,7 +112,11 @@ module.exports = [
           {
             title: "Notification 通知提醒框",
             link: "notification"
-          }
+          },
+          {
+            title: "Result 结果",
+            link: "result"
+          },
         ]
       },
       {

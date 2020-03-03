@@ -134,6 +134,13 @@ export default [
   {
     title: "Notification",
     link: "notification",
-    source: lazy(() => import("../components/Container/Notification/notification"))
+    source: lazy(() =>
+      import("../components/Container/Notification/notification")
+    )
+  },
+  {
+    title: "Result",
+    link: "result",
+    source: lazy(() => import("../components/Container/Result/result"))
   }
 ];
