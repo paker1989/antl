@@ -120,5 +120,20 @@ export default [
     title: "PageHeader 页头",
     link: "pageHeader",
     source: lazy(() => import("../components/Container/PageHeader/pageHeader"))
+  },
+  {
+    title: "Tabs",
+    link: "tabs",
+    source: lazy(() => import("../components/Container/Tab/tab"))
+  },
+  {
+    title: "Anchor",
+    link: "anchor",
+    source: lazy(() => import("../components/Container/Anchor/anchor"))
+  },
+  {
+    title: "Notification",
+    link: "notification",
+    source: lazy(() => import("../components/Container/Notification/notification"))
   }
 ];

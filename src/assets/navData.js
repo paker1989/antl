@@ -96,6 +96,10 @@ module.exports = [
             title: "PageHeader 页头",
             link: "pageHeader"
           },
+          {
+            title: "Tabs 标签页",
+            link: "tabs"
+          },
         ]
       },
       {
@@ -104,6 +108,19 @@ module.exports = [
           {
             title: "Drawer 抽屉",
             link: "drawer"
+          },
+          {
+            title: "Notification 通知提醒框",
+            link: "notification"
+          }
+        ]
+      },
+      {
+        title: '其他',
+        items: [
+          {
+            title: "Anchor 锚点",
+            link: "anchor"
           }
         ]
       }

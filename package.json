@@ -17,6 +17,7 @@
     "react-resizable": "^1.10.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
+    "react-sticky": "^6.0.3",
     "react-styleguidist": "^10.6.2",
     "source-map-explorer": "^2.2.2"
   },
