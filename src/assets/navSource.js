@@ -142,5 +142,15 @@ export default [
     title: "Result",
     link: "result",
     source: lazy(() => import("../components/Container/Result/result"))
-  }
+  },
+  {
+    title: "Modal",
+    link: "modal",
+    source: lazy(() => import("../components/Container/Modal/modal"))
+  },
+  {
+    title: "Progress",
+    link: "progress",
+    source: lazy(() => import("../components/Container/Progress/progress"))
+  },
 ];

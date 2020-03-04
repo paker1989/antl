@@ -117,6 +117,14 @@ module.exports = [
             title: "Result 结果",
             link: "result"
           },
+          {
+            title: "Modal 对话框",
+            link: "modal"
+          },
+          {
+            title: "Progress 进度条",
+            link: "progress"
+          },
         ]
       },
       {
