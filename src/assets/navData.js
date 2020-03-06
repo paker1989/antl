@@ -46,11 +46,11 @@ module.exports = [
           {
             title: "Upload 上传",
             link: "upload",
-          },
+          }, 
           {
             title: "Form 表单",
-            link: "form",
-          },
+            link: "form"
+          }
         ]
       },
       {

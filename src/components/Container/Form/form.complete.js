@@ -12,7 +12,6 @@ import {
   Checkbox,
   Button,
   AutoComplete,
-  Card
 } from "antd";
 
 import "./form.less";
@@ -76,6 +75,8 @@ class RegistrationForm extends React.Component {
   };
 
   compareToFirstPassword = (rule, value, callback) => {
+    console.log('compare to first password');
+    console.log(rule);
     const { form } = this.props;
     if (value && value !== form.getFieldValue("password")) {
       callback("Two passwords that you enter is inconsistent!");

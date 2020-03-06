@@ -154,8 +154,8 @@ export default [
     source: lazy(() => import("../components/Container/Progress/progress"))
   },
   {
-    title: "Form",
+    title: "Form 表单",
     link: "form",
-    source: lazy(() => import("../components/Container/Form2/form"))
-  },
+    source: lazy(() => import("../components/Container/Form/form"))
+  }
 ];
