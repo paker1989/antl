@@ -137,6 +137,10 @@ module.exports = [
           {
             title: "Anchor 锚点",
             link: "anchor"
+          },
+          {
+            title: '其他组件',
+            link: 'others'
           }
         ]
       }

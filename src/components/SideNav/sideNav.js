@@ -14,7 +14,7 @@ export default () => {
     return (
         <Sider
             className="app-sider"
-            width={256}
+            width={300}
             collapsedWidth="80"
             collapsible
             defaultCollapsed={false}
