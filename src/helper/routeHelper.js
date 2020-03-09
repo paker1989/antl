@@ -1,7 +1,8 @@
 
 
 export function getFullPath(link) {
-    return `/${link}`;
+    console.log(`/comp/${link}`);
+    return `/comp/${link}`;
 }
 
 // export function renderComponent(match, data) {

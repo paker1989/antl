@@ -20,7 +20,7 @@ export default () => {
                             component={item.source} />
                     )
                 })}
-                <Redirect from="*" to="/menu" />
+                <Redirect from="*" to="/comp/menu" />
             </Switch>
             </Suspense>
 

@@ -1,8 +1,9 @@
 import React from "react";
 import { Layout } from "antd";
-import { BrowserRouter as Router, } from 'react-router-dom';
-import SideNav from './components/SideNav/sideNav';
-import Container from './components/Container/container';
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
+import SideNav from "./components/SideNav/sideNav";
+import Container from "./components/Container/container";
+import Espn from './module/espn/espn';
 
 import "./App.less";
 
@@ -17,15 +18,24 @@ function App() {
 
   return (
     <Router basename="/">
-      <Layout style={{ minHeight: "900px" }}>
-        <Header className="app-header"></Header> {/* to customize later */}
-        <Layout style={{ position: "relative", height: "100%" }}>
-          <SideNav />
-          <Container />
-        </Layout>
-      </Layout>
+      <Switch>
+        <Route
+          path="/comp"
+          render={() => (
+            <Layout style={{ minHeight: "900px" }}>
+              <Header className="app-header"></Header>
+              {/* to customize later */}
+              <Layout style={{ position: "relative", height: "100%" }}>
+                <SideNav />
+                <Container />
+              </Layout>
+            </Layout>
+          )}
+        />
+        <Route path="/espn" component={Espn}/>
+        <Redirect from="*" to="/espn" />
+      </Switch>
     </Router>
-
   );
 }
 
