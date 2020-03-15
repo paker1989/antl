@@ -1,1 +1,20 @@
-@import '../../../../espn.theme.less';
+@import "../../../../espn.theme.less";
+@quick-link-margin: 15px;
+
+.quick-link {
+  position: relative;
+  margin: @quick-link-margin 0;
+  border-radius: @card-radius;
+
+  .ant-card-head-title {
+    .card-title();
+  }
+
+  .ant-card-body {
+    padding: 12px 10px;
+  }
+
+  .ant-list-item-meta-title {
+    .card-item-title();
+  }
+}

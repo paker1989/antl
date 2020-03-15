@@ -75,7 +75,7 @@ export default () => {
                 <List.Item.Meta
                   style={{ padding: "10px 0 10px 30px" }}
                   avatar={
-                    <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
+                    <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"/>
                   }
                   description={item}
                   title={`Item-${index + 1}`}

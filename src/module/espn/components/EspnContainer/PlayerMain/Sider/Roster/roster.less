@@ -1,0 +1,34 @@
+@import "../../../../../espn.theme.less";
+
+@select-radius: 10px;
+
+@select-bottom: 10px;
+
+.roster-card {
+  border-radius: @card-radius;
+
+  .ant-card-head-title {
+    .card-title();
+  }
+
+  .ant-card-body {
+    padding: 12px 10px;
+  }
+
+  .ant-list-item-meta-title {
+    .card-item-title();
+  }
+
+  .roster-content {
+    .roster-selects {
+      .select-prop {
+        width: 100%;
+        margin-bottom: @select-bottom;
+
+        .ant-select-selection {
+          border-radius: @select-radius;
+        }
+      }
+    }
+  }
+}
