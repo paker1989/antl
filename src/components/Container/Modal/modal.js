@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Menu, Icon, Typography, Row, Col } from 'antd';
+import { Typography, Row, Col } from 'antd';
 import ModalBasic from './modal.basic';
 import ModalAsync from './modal.async';
 import ModalFooter from './modal.cust.footer';

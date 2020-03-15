@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Typography, Table, Tag } from "antd";
+import { Typography, Table } from "antd";
 import "./table.less";
 
 const { Title, Paragraph } = Typography;

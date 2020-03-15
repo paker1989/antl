@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment } from 'react';
 import { Modal, Button, Icon } from 'antd';
 
 import './modal.less';

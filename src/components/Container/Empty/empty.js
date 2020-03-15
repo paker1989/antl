@@ -1,5 +1,5 @@
 import React from "react";
-import { Empty, Button, Select } from "antd";
+import { Empty, Button } from "antd";
 import EmptySelect from "./empty.select";
 
 import "./empty.less";

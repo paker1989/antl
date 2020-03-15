@@ -1,0 +1,164 @@
+@import "../../../espn.theme.less";
+
+@header-height: 180px;
+@avatar-height: @header-height - 20px;
+@player-statistic-width: 400px;
+@player-statistic-height: 140px;
+
+@nm-fontsize: 28px;
+@meta-fontsize: 11px;
+@statistic-fontsize: 13px;
+
+@meta-logo-size: 18px;
+
+@avatar-offset: 50px;
+
+.player-desc {
+  background: #fff;
+
+  .player-desc-row > .ant-col {
+    height: @header-height;
+  }
+
+  .player-info {
+    position: relative;
+    // display: flex;
+
+    .devider {
+      // flex: 0;
+      position: absolute;
+      height: @header-height;
+    }
+
+    .info-body {
+      padding-left: 18px;
+
+      .ant-descriptions-item-label {
+        color: rgba(0, 0, 0, 0.65);
+        font-size: @meta-fontsize;
+      }
+
+      .ant-descriptions-item-content {
+        color: rgba(0, 0, 0, 0.85);
+        font-size: @meta-fontsize;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .playerMeta {
+    & > .ant-col {
+      height: @header-height;
+    }
+
+    .playerMeta-avatar {
+      position: relative;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: 30% 20%;
+
+      img {
+        position: absolute;
+        bottom: 0;
+        left: @avatar-offset;
+        height: @avatar-height;
+      }
+    }
+    .playerMeta-body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .meta-name {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+
+        .name {
+          font-size: @nm-fontsize;
+          text-transform: uppercase;
+
+          &.fm {
+            font-weight: 200;
+          }
+
+          &.lm {
+            font-weight: 700;
+          }
+        }
+      }
+
+      .meta-content {
+        display: flex;
+        align-items: center;
+        font-size: @meta-fontsize;
+
+        img {
+          width: @meta-logo-size;
+        }
+
+      }
+    }
+
+    .follow-btn {
+      margin-left: 15px;
+    }
+  }
+
+  .player-statistic {
+    margin-top: (@header-height - @player-statistic-height) / 2;
+    // margin-left: 15px;
+    width: 90%;
+    margin-left: 5%;
+    max-height: @player-statistic-height;
+
+    &.ant-card {
+      border-radius: 10px;
+    }
+
+    .ant-card-head {
+      background-color: @team-base-color;
+      color: #fff;
+      min-height: auto;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+      .ant-card-head-title {
+        display: flex;
+        justify-content: center;
+        font-size: @statistic-fontsize;
+        padding: 6px 0;
+      }
+    }
+
+    .ant-card-body {
+      padding: 4px 12px;
+    }
+
+    .statistic-body {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .ant-statistic-title {
+        font-size: @meta-fontsize;
+        text-align: center;
+      }
+
+      .statistic-item-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .main {
+          font-size: 28px;
+          font-weight: 600;
+        }
+        .sub {
+          font-size: @meta-fontsize;
+          color: rgba(0, 0, 0, 0.45);
+        }
+      }
+    }
+  }
+}

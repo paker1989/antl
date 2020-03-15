@@ -1,5 +1,5 @@
-import React, { Fragment, useEffect } from "react";
-import { Typography, Row, Col, Form, Input, Icon, Button } from "antd";
+import React, { useEffect } from "react";
+import { Form, Input, Icon, Button } from "antd";
 
 import "./form.less";
 

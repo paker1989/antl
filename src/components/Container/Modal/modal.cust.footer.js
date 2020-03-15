@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react';
-import { Modal, Button, Icon } from 'antd';
+import { Modal, Button } from 'antd';
 
 import './modal.less';
 

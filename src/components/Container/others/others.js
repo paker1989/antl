@@ -125,7 +125,7 @@ export default () => {
             </Row>
             <Row gutter={30} type="flex" justify="space-around">
               <Badge dot>
-                <a href="#">Link something</a>
+                <a href="https://react.js.com">Link something</a>
               </Badge>
               <Badge dot>
                 <Icon type="notification" />

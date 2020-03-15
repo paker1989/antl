@@ -1,5 +1,5 @@
-import React, { Fragment, useEffect, useState } from "react";
-import { Typography, Row, Col, Form, Input, Icon, Button, Tooltip } from "antd";
+import React, { Fragment } from "react";
+import {  Form, Input, Icon, Button, Tooltip } from "antd";
 
 import "./form.less";
 let id = 0;

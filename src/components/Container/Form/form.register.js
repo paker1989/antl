@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Form, Input, Icon, Button, Checkbox } from "antd";
 
 import "./form.less";
