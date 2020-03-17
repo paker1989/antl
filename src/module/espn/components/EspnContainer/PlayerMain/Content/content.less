@@ -1,22 +1,27 @@
 @import "../../../../espn.theme.less";
 
-.latest-news {
+@card-margin-top: 20px;
+
+.latest-news,
+.previous-games {
   border-radius: @card-radius;
 
   .ant-card-head {
     min-height: auto;
   }
-  
+
   .ant-card-head-title {
     .card-title();
   }
 
   .ant-card-body {
     padding: 12px 10px;
+  }
+}
 
-    .ant-typography {
-      margin-bottom: 0;
-    }
+.latest-news {
+  .ant-card-body .ant-typography {
+    margin-bottom: 0;
   }
 
   .timing {
@@ -27,5 +32,48 @@
     float: right;
     color: @sub-title-color;
     font-size: 11px;
+  }
+}
+
+.previous-games {
+  margin-top: @card-margin-top;
+}
+
+.gameVs {
+  .score {
+    color: darken(@sub-title-color, 10%);
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .vs-target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .vs-target-text {
+      display: flex;
+      flex-direction: column;
+
+      .team {
+        color: @sub-title-color;
+        font-size: 15px;
+      }
+
+      .stats {
+        font-size: 11px;
+      }
+
+      &.home {
+        justify-content: flex-end;
+      }
+      &.away {
+        justify-content: flex-start;
+      }
+    }
   }
 }

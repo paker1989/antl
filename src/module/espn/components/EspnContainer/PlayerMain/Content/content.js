@@ -1,6 +1,7 @@
 import React from "react";
-// import { Row } from 'antd';
+
 import LatestNews from "./latest";
+import PreviousGame from "./PreviousGame/previousGame";
 import "./content.less";
 
 const latestProps = {
@@ -10,10 +11,12 @@ const latestProps = {
   timing: "4 days ago",
   content: `The NBA announced Wednesday the 2019-20 season has been suspended indefinitely after a player tested positive for COVID-19.`
 };
+
 export default () => {
   return (
     <div className="player-content">
       <LatestNews {...latestProps} />
+      <PreviousGame />
     </div>
   );
 };
