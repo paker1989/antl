@@ -1,0 +1,105 @@
+@import "../../../../../espn.theme.less";
+
+@news-card-width: 149px;
+@news-card-border-radius: 10px;
+@news-card-cover-img-height: 85px;
+
+@news-card-margin-right: 10px;
+
+@news-card-media-button-dimension: 34px;
+
+.latest-news {
+  position: relative;
+  margin-top: 20px;
+
+  .news-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+
+    .news-card {
+      margin-right: @news-card-margin-right;
+      flex-shrink: 0;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 999;
+      &.right {
+        right: 0;
+      }
+      &.left {
+        left: 0;
+      }
+    }
+  }
+}
+
+.news-card {
+  width: @news-card-width;
+  border-radius: @news-card-border-radius;
+
+  .video-cover {
+    position: relative;
+    width: 100%;
+    height: @news-card-cover-img-height;
+    border-radius: @news-card-border-radius @news-card-border-radius 0 0;
+    overflow: hidden;
+
+    &:hover .cover-img {
+      transform: scale(1.2);
+    }
+
+    .media-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      border-radius: 50px;
+      width: @news-card-media-button-dimension;
+      height: @news-card-media-button-dimension;
+      z-index: 2;
+      background-color: hsla(0, 0%, 100%, 0.48);
+      backdrop-filter: blur(8px);
+    }
+  }
+
+  .cover-img {
+    width: 100%;
+    height: @news-card-cover-img-height;
+    border-radius: @news-card-border-radius @news-card-border-radius 0 0;
+    transition: transform .2s ease-in;
+  }
+
+  .ant-card-body {
+    height: 80px;
+    padding: 0;
+    .content {
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 16px;
+    }
+  }
+
+  .ant-card-actions {
+    background-color: #fff;
+    border-top: none;
+    border-radius: 0 0 @news-card-border-radius @news-card-border-radius;
+
+    li {
+      margin: 0 0 3px 0;
+    }
+
+    .footer {
+      // display: inline-block;
+      padding: 0 5px;
+      font-size: 11px;
+      color: @sub-title-color;
+      text-align: left;
+    }
+  }
+}

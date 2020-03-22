@@ -9,7 +9,7 @@ const { Paragraph } = Typography;
 export default ({ title, extra, content, timing, powerby }) => {
   return (
     <Card
-      className="latest-news"
+      className="latest-news espn-card"
       title={title}
       extra={<Badge status={extra.status} text={extra.text} />}
     >

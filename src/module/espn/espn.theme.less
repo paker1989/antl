@@ -36,3 +36,48 @@
   font-size: 12px;
   font-weight: 500;
 }
+
+.espn-card {
+  border-radius: @card-radius;
+
+  .ant-card-head {
+    min-height: auto;
+  }
+
+  .ant-card-head-title {
+    .card-title();
+  }
+
+  .ant-card-body {
+    padding: 12px 10px;
+  }
+}
+
+.espn-table {
+  .ant-table-small {
+    border: none;
+  }
+
+  .ant-table-column-title {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .ant-table-tbody tr td {
+    font-size: 11px;
+  }
+
+  .ant-table-tbody > :nth-child(even) {
+     background-color: lighten(#f1f2f3, 2%);
+  }
+
+  .ant-table-thead th:first-child, .ant-table-row td:first-child {
+    border-right: 1px solid darken(#f1f2f3, 2%);
+  }
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

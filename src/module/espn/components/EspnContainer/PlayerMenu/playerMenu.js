@@ -34,7 +34,7 @@ export default ({ menuProps }) => {
   };
 
   return (
-    <Sticky bottomOffset="40">
+    <Sticky bottomOffset={40}>
       {({ style }) => (
         <Row className="player-menu-row" style={{ ...style, zIndex: 1 }}>
           <Col span={24}>{RenderRootMenu(menuProps)}</Col>

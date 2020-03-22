@@ -29,9 +29,9 @@ const gameVsProps = {
 export default () => {
   return (
     <Card
-      className="previous-games"
+      className="previous-games espn-card"
       title="Previous Game"
-      extra={[<a href="https://nba.com">Full Split</a>]}
+      extra={[<a href="https://nba1.com">Full Split</a>]}
     >
       <GameVs {...gameVsProps} />
     </Card>

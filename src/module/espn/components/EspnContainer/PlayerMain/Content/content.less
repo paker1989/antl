@@ -2,22 +2,23 @@
 
 @card-margin-top: 20px;
 
-.latest-news,
-.previous-games {
-  border-radius: @card-radius;
+// .latest-news,
+// .previous-games,
+// .stats-table {
+//   border-radius: @card-radius;
 
-  .ant-card-head {
-    min-height: auto;
-  }
+//   .ant-card-head {
+//     min-height: auto;
+//   }
 
-  .ant-card-head-title {
-    .card-title();
-  }
+//   .ant-card-head-title {
+//     .card-title();
+//   }
 
-  .ant-card-body {
-    padding: 12px 10px;
-  }
-}
+//   .ant-card-body {
+//     padding: 12px 10px;
+//   }
+// }
 
 .latest-news {
   .ant-card-body .ant-typography {
@@ -74,6 +75,65 @@
       &.away {
         justify-content: flex-start;
       }
+    }
+  }
+}
+
+.info-card {
+  margin-bottom: 20px;
+  &.ant-card {
+    border-radius: 10px;
+  }
+
+  .ant-card-head {
+    background-color: @team-base-color;
+    color: #fff;
+    min-height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    .ant-card-head-title {
+      display: flex;
+      justify-content: center;
+      padding: 6px 0;
+      font-size: 13px;
+    }
+  }
+
+  .ant-card-body {
+    padding: 4px 12px;
+  }
+
+  .ant-statistic-content {
+    text-align: center;
+  }
+}
+
+.recent-games {
+  margin-top: 20px;
+
+  .opp-wrapper {
+    display: flex;
+    align-items: center;
+    .vs {
+      font-size: 11px;
+      color: @sub-title-color;
+    }
+    img {
+      height: 18px;
+      margin: 0 3px;
+    }
+  }
+
+  .result-wrapper {
+    display: flex;
+    align-items: center;
+    .mark {
+      color: #094;
+      &.is-lose {
+        color: #d00;
+      }
+      
     }
   }
 }
