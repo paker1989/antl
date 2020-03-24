@@ -86,7 +86,7 @@ export default class EditableCell extends React.Component {
   }
 }
 
-class EditableTable extends React.Component {
+export class EditableTable extends React.Component {
   constructor(props) {
     super(props);
     this.columns = [
@@ -110,7 +110,7 @@ class EditableTable extends React.Component {
         render: (text, record) =>
           this.state.dataSource.length >= 1 ? (
             <Popconfirm title="Sure to delete?" onConfirm={() => this.handleDelete(record.key)}>
-              <a>Delete</a>
+              <a href="https://google.com">Delete</a>
             </Popconfirm>
           ) : null,
       },

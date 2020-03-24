@@ -47,7 +47,7 @@ export default class Demo extends React.Component {
       {
         title: "Action",
         key: "action",
-        render: () => <a>Delete</a>
+        render: () => <a href="https://google.com">Delete</a>
       }
     ]
   };

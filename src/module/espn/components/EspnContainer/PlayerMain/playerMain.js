@@ -15,12 +15,12 @@ export default () => {
       </Col>
       <Col
         sm={{ span: 20, offset: 2 }}
-        md={{ span: 15, offset: 1 }}
+        md={{ span: 20, offset: 2 }}
         lg={{ span: 12, offset: 0 }}
       >
         <Content />
       </Col>
-      <Col sm={0} md={{ span: 5 }}>
+      <Col sm={0} md={0} lg={{ span: 5 }}>
         <RightSider />
       </Col>
     </Row>

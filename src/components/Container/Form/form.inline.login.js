@@ -18,7 +18,7 @@ const HorizontalLoginForm = ({ form }) => {
 
   useEffect(() => {
     form.validateFields();
-  }, []);
+  }, [form]);
 
   const handleSubmit = e => {
     e.preventDefault();

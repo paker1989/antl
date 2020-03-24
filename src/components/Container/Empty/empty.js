@@ -18,7 +18,7 @@ export default () => {
           image="https://gw.alipayobjects.com/mdn/miniapp_social/afts/img/A*pevERLJC9v0AAAAAAAAAAABjAQAAAQ/original"
           description={
             <span>
-              Customize <a href="#">Description</a>
+              Customize <a href="https://google.com">Description</a>
             </span>
           }
         >

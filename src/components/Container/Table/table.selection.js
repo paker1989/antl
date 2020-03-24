@@ -2,7 +2,7 @@ import React, { Fragment, useState } from "react";
 import { Typography, Table } from "antd";
 import "./table.less";
 
-const { Title, Paragraph } = Typography;
+const { Title } = Typography;
 
 export default () => {
   const [selectedKeys, setSelectedKeys] = useState([]);

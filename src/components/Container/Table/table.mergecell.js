@@ -25,10 +25,10 @@ export default () => {
             dataIndex: 'name',
             render: (text, row, index) => {
                 if (index < 4) {
-                    return <a>{text}</a>;
+                    return <a href="https://google.com">{text}</a>;
                 }
                 return {
-                    children: <a>{text}</a>,
+                    children: <a href="https://google.com">{text}</a>,
                     props: {
                         colSpan: 5,
                     },

@@ -54,7 +54,7 @@ export default () => {
               onCancel={cancel}
               placement="bottom"
             >
-              <a href="#">Delete</a>
+              <a href="https://google.com">Delete</a>
             </Popconfirm>
           </Card>
         </Col>
@@ -82,7 +82,7 @@ export default () => {
               visible={visible}
               onVisibleChange={handleVisibleChange}
             >
-              <a href="#">Delete</a>
+              <a href="https://google.com">Delete</a>
             </Popconfirm>
           </Card>
         </Col>

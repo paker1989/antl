@@ -69,6 +69,7 @@ export default () => {
 
   const IconLink = ({ src, text }) => (
     <a
+      href="google.com"
       style={{
         marginRight: 20,
         marginBottom: 20,
@@ -125,7 +126,7 @@ export default () => {
           <Descriptions column={2}>
             <Item label="Created">孙俪</Item>
             <Item label="Association">
-              <a>443442</a>
+              <a href="https://google.com">443442</a>
             </Item>
             <Item label="Creation Time">2017-01-10</Item>
             <Item label="Effective Time">2017-01-10</Item>
@@ -153,7 +154,7 @@ export default () => {
               <img
                 src="https://gw.alipayobjects.com/mdn/mpaas_user/afts/img/A*KsfVQbuLRlYAAAAAAAAAAABjAQAAAQ/original"
                 alt="content"
-                style={{marginBottom: 20}}
+                style={{ marginBottom: 20 }}
               />
             </Col>
           </Row>

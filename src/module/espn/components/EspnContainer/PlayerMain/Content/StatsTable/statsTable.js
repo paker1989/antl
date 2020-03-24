@@ -7,7 +7,8 @@ import "../content.less";
 export default ({ title, dataSource, columns, extra, className }) => {
   const wrapperClass = cx(
     {
-      "espn-card": true
+      "espn-card": true,
+      'stats-table':  true,
     },
     className
   );

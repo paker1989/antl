@@ -31,7 +31,7 @@ export default () => {
         <Card
             style={{ width: '100%' }}
             title="Card title"
-            extra={<a href="#">More</a>}
+            extra={<a href="https://google.com">More</a>}
             activeTabKey={key}
             tabList={tabList}
             onTabChange={(key) => { setKey(key) }}

@@ -68,8 +68,8 @@ export default () => {
           key="action"
           render={(text, record) => (
             <span>
-              <a style={{ marginRight: 16 }}>Invite {record.lastName}</a>
-              <a>Delete</a>
+              <a href="https://google.com" style={{ marginRight: 16 }}>Invite {record.lastName}</a>
+              <a href="https://google.com">Delete</a>
             </span>
           )}
         />

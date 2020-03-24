@@ -53,12 +53,12 @@ export default () => {
           <Paragraph>
             <Icon style={{ color: "red" }} type="close-circle" /> Your account
             has been frozen
-            <a>Thaw immediately &gt;</a>
+            <a href="https://google.com">Thaw immediately &gt;</a>
             <Text code>close-circle</Text>
           </Paragraph>
           <Paragraph>
             <Icon style={{ color: "red" }} type="close-circle" /> Your account
-            is not yet eligible to apply <a>Apply Unlock &gt;</a>
+            is not yet eligible to apply <a href="https://google.com">Apply Unlock &gt;</a>
           </Paragraph>
         </div>
       </Result>

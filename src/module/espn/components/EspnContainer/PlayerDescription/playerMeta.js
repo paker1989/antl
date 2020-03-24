@@ -24,7 +24,7 @@ export default ({ bgImage, userMeta }) => {
             <span className="name lm">{userMeta.lastName}</span>
           </span>
           <div className="meta-content">
-            <img src={bgImage} />
+            <img src={bgImage} alt="example"/>
             <span>{team}</span>
             <Badge status="default" style={{ margin: "0 10px" }} />
             <span>{number}</span>

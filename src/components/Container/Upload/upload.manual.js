@@ -1,7 +1,7 @@
 // import { UploadOutlined } from "@ant-design/icons";
-import { Button, message, Upload, Icon } from "antd";
 import React from "react";
 import Axios from "axios";
+import { Button, message, Upload, Icon } from "antd";
 
 export default class Demo extends React.Component {
   state = {
@@ -71,8 +71,8 @@ export default class Demo extends React.Component {
         <Upload
           multiple
           onChange={info => {
-            console.log('onchange');
-            const { file, fileList } = info;
+            console.log("onchange");
+            const { fileList } = info;
             // console.log(file);
             // console.log(fileList);
             fileList.forEach(file => {

@@ -264,7 +264,7 @@ class RegistrationForm extends React.Component {
             // initialValue: true
           })(
             <Checkbox>
-              I have read the <a href="#">agreement</a>
+              I have read the <a href="https://google.com">agreement</a>
             </Checkbox>
           )}
         </Form.Item>

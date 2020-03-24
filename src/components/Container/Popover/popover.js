@@ -24,7 +24,7 @@ export default () => {
           content={
            <div>
              <p>Content</p>
-             <a href="#">close</a>
+             <a href="https://google.com">close</a>
            </div>
           }
           >

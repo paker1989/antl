@@ -32,10 +32,10 @@ export default () => {
         key: 'operation',
         render: () => (
           <span className="table-operation">
-            <a>Pause</a>
-            <a>Stop</a>
+            <a href="https://google.com">Pause</a>
+            <a href="https://google.com">Stop</a>
             <Dropdown overlay={menu}>
-              <a>
+              <a href="https://google.com">
                 More <Icon type="down" />
               </a>
             </Dropdown>
@@ -63,7 +63,7 @@ export default () => {
     { title: 'Upgraded', dataIndex: 'upgradeNum', key: 'upgradeNum' },
     { title: 'Creator', dataIndex: 'creator', key: 'creator' },
     { title: 'Date', dataIndex: 'createdAt', key: 'createdAt' },
-    { title: 'Action', key: 'operation', render: () => <a>Publish</a> },
+    { title: 'Action', key: 'operation', render: () => <a href="http://google.com">Publish</a> },
   ];
 
   const data = [];

@@ -1,5 +1,5 @@
 import React from "react";
-import { Table, Input, InputNumber, Popconfirm, Form } from 'antd';
+import { Table, Input, InputNumber, Popconfirm, Form } from "antd";
 
 const data = [];
 for (let i = 0; i < 100; i++) {
@@ -7,14 +7,14 @@ for (let i = 0; i < 100; i++) {
     key: i.toString(),
     name: `Edrward ${i}`,
     age: 32,
-    address: `London Park no. ${i}`,
+    address: `London Park no. ${i}`
   });
 }
 const EditableContext = React.createContext();
 
 class EditableCell extends React.Component {
   getInput = () => {
-    if (this.props.inputType === 'number') {
+    if (this.props.inputType === "number") {
       return <InputNumber />;
     }
     return <Input />;
@@ -39,10 +39,10 @@ class EditableCell extends React.Component {
               rules: [
                 {
                   required: true,
-                  message: `Please Input ${title}!`,
-                },
+                  message: `Please Input ${title}!`
+                }
               ],
-              initialValue: record[dataIndex],
+              initialValue: record[dataIndex]
             })(this.getInput())}
           </Form.Item>
         ) : (
@@ -53,36 +53,38 @@ class EditableCell extends React.Component {
   };
 
   render() {
-    return <EditableContext.Consumer>{this.renderCell}</EditableContext.Consumer>;
+    return (
+      <EditableContext.Consumer>{this.renderCell}</EditableContext.Consumer>
+    );
   }
 }
 
 class EditableTable extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { data, editingKey: '' };
+    this.state = { data, editingKey: "" };
     this.columns = [
       {
-        title: 'name',
-        dataIndex: 'name',
-        width: '25%',
-        editable: true,
+        title: "name",
+        dataIndex: "name",
+        width: "25%",
+        editable: true
       },
       {
-        title: 'age',
-        dataIndex: 'age',
-        width: '15%',
-        editable: true,
+        title: "age",
+        dataIndex: "age",
+        width: "15%",
+        editable: true
       },
       {
-        title: 'address',
-        dataIndex: 'address',
-        width: '40%',
-        editable: true,
+        title: "address",
+        dataIndex: "address",
+        width: "40%",
+        editable: true
       },
       {
-        title: 'operation',
-        dataIndex: 'operation',
+        title: "operation",
+        dataIndex: "operation",
         render: (text, record) => {
           const { editingKey } = this.state;
           const editable = this.isEditing(record);
@@ -91,6 +93,7 @@ class EditableTable extends React.Component {
               <EditableContext.Consumer>
                 {form => (
                   <a
+                    href="https://google.com"
                     onClick={() => this.save(form, record.key)}
                     style={{ marginRight: 8 }}
                   >
@@ -98,24 +101,31 @@ class EditableTable extends React.Component {
                   </a>
                 )}
               </EditableContext.Consumer>
-              <Popconfirm title="Sure to cancel?" onConfirm={() => this.cancel(record.key)}>
-                <a>Cancel</a>
+              <Popconfirm
+                title="Sure to cancel?"
+                onConfirm={() => this.cancel(record.key)}
+              >
+                <a href="https://google.com">Cancel</a>
               </Popconfirm>
             </span>
           ) : (
-            <a disabled={editingKey !== ''} onClick={() => this.edit(record.key)}>
+            <a
+              href="https://google.com"
+              disabled={editingKey !== ""}
+              onClick={() => this.edit(record.key)}
+            >
               Edit
             </a>
           );
-        },
-      },
+        }
+      }
     ];
   }
 
   isEditing = record => record.key === this.state.editingKey;
 
   cancel = () => {
-    this.setState({ editingKey: '' });
+    this.setState({ editingKey: "" });
   };
 
   save(form, key) {
@@ -129,12 +139,12 @@ class EditableTable extends React.Component {
         const item = newData[index];
         newData.splice(index, 1, {
           ...item,
-          ...row,
+          ...row
         });
-        this.setState({ data: newData, editingKey: '' });
+        this.setState({ data: newData, editingKey: "" });
       } else {
         newData.push(row);
-        this.setState({ data: newData, editingKey: '' });
+        this.setState({ data: newData, editingKey: "" });
       }
     });
   }
@@ -146,8 +156,8 @@ class EditableTable extends React.Component {
   render() {
     const components = {
       body: {
-        cell: EditableCell,
-      },
+        cell: EditableCell
+      }
     };
 
     const columns = this.columns.map(col => {
@@ -158,11 +168,11 @@ class EditableTable extends React.Component {
         ...col,
         onCell: record => ({
           record,
-          inputType: col.dataIndex === 'age' ? 'number' : 'text',
+          inputType: col.dataIndex === "age" ? "number" : "text",
           dataIndex: col.dataIndex,
           title: col.title,
-          editing: this.isEditing(record),
-        }),
+          editing: this.isEditing(record)
+        })
       };
     });
 
@@ -175,7 +185,7 @@ class EditableTable extends React.Component {
           columns={columns}
           rowClassName="editable-row"
           pagination={{
-            onChange: this.cancel,
+            onChange: this.cancel
           }}
         />
       </EditableContext.Provider>

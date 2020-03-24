@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col, Menu } from "antd";
-import { StickyContainer, Sticky } from "react-sticky";
+import {  Sticky } from "react-sticky";
 
 import "./playerMenu.less";
 

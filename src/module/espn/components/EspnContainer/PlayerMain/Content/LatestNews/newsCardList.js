@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon } from "antd";
+// import { Icon } from "antd";
 import NewsCard from "./newsCard";
 
 import './latestNews.less';
