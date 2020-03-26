@@ -10,6 +10,7 @@ const { Sider } = Layout;
 const { SubMenu } = Menu;
 
 export default ({ navData, ...menuProps }) => {
+  console.log(navData);
   return (
     <Sider
       className="app-sider"
@@ -21,8 +22,8 @@ export default ({ navData, ...menuProps }) => {
       // theme="light"
     >
       <Menu mode="inline" {...menuProps}>
-        {navData.map(item => {
-          if (item.type === "group") {
+        {Array.isArray(navData) ? (
+          navData.map(item => {
             return (
               <SubMenu title={item.title} key={item.title}>
                 {item.group_detail.map(group => {
@@ -42,17 +43,18 @@ export default ({ navData, ...menuProps }) => {
                 })}
               </SubMenu>
             );
-          } else {
-            return (
-              // <Menu.Item key={item.title}>
-              //   <NavLink to={getFullPath("comp", item.link)}>
-              //     {item.title}
-              //   </NavLink>
-              // </Menu.Item>
-              null
-            ); // to do
-          }
-        })}
+          })
+        ) : (
+          <SubMenu title={navData.title} key={navData.title}>
+            {navData.items.map(mnItem => (
+              <Menu.Item key={mnItem.title}>
+                <NavLink to={getFullPath("animate", mnItem.link)}>
+                  {mnItem.title}
+                </NavLink>
+              </Menu.Item>
+            ))}
+          </SubMenu>
+        )}
       </Menu>
     </Sider>
   );

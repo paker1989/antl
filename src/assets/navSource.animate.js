@@ -3,9 +3,9 @@ import { lazy } from "react";
 export default {
   one: [
     {
-      title: "Menu",
-      link: "menu",
-      source: lazy(() => import("../components/Container/Menu/menu"))
+      title: "one-basic",
+      link: "basic",
+      source: lazy(() => import("../module/antMotion/one/basic/basic"))
     },
   ]
 }
