@@ -43,7 +43,14 @@ export default ({ navData, ...menuProps }) => {
               </SubMenu>
             );
           } else {
-            return null; // to do
+            return (
+              // <Menu.Item key={item.title}>
+              //   <NavLink to={getFullPath("comp", item.link)}>
+              //     {item.title}
+              //   </NavLink>
+              // </Menu.Item>
+              null
+            ); // to do
           }
         })}
       </Menu>

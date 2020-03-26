@@ -3,18 +3,36 @@
 .container {
   .header {
     height: @header-height;
-    background-color: #fff;
+    // background-color: #fff;
 
     .header-logo {
       display: flex;
       align-items: center;
       justify-content: center;
       height: @header-height;
+      
+      h3.ant-typography {
+        color: #fff;
+      }
 
       img {
         width: @logo-width;
         margin-right: 10px;
       }
+    }
+  }
+
+  .content-tabs {
+    .ant-tabs-nav-scroll {
+      text-align: center;
+
+      .ant-tabs-nav .ant-tabs-tab {
+        margin-right: 70px;
+      }
+
+      // .ant-tabs-nav .ant-tabs-tab-active {
+      //   color: green;
+      // }
     }
   }
 }
