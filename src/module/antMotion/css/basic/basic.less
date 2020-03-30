@@ -1,0 +1,65 @@
+@import "../../index.theme.less";
+
+@basic-animation-duration: 5s;
+.basic-fade {
+  &-enter {
+    opacity: 0;
+    animation-duration: @basic-animation-duration;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+    animation-play-state: paused;
+  }
+
+  &-appear {
+    opacity: 0;
+    // animation-delay: 2s;
+    animation-duration: @basic-animation-duration;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+    animation-play-state: paused;
+  }
+
+  &-leave {
+    animation-duration: @basic-animation-duration;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+    animation-play-state: paused;
+  }
+
+  &-enter.basic-fade-enter-active {
+    animation-name: basicFadeIn;
+    animation-play-state: running;
+  }
+
+  &-appear.basic-fade-enter-active {
+    animation-name: basicFadeIn;
+    animation-play-state: running;
+  }
+
+  &-leave.basic-fade-leave-active {
+    animation-name: basicFadeOut;
+    animation-play-state: running;
+  }
+}
+
+@keyframes basicFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes basicFadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}

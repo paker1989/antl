@@ -4,6 +4,7 @@ import SubMenu from 'antd/lib/menu/SubMenu';
 
 
 export default () => {
+    console.log('menu component');
     return (
         <div className="demo-menu">
             <h1 className="demo-title">Menu 导航菜单</h1>

@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import { Layout } from "antd";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 import SideNav from "../../components/SideNav/sideNav";
 
@@ -12,6 +12,7 @@ import { getFullPath } from "../../helper/routeHelper";
 const { Content } = Layout;
 
 export default ({ tabKey }) => {
+  console.log(`/animate/${tabKey}/${NavSource[tabKey][0].link}`);
   return (
     <Layout className="tab-content">
       <SideNav navData={NavData[tabKey]} defaultOpenKeys={["范例"]} />
@@ -27,10 +28,10 @@ export default ({ tabKey }) => {
                 />
               );
             })}
-            <Redirect
+            {/* <Redirect
               from="*"
               to={`/animate/${tabKey}/${NavSource[tabKey][0].link}`}
-            />
+            /> */}
           </Switch>
         </Suspense>
       </Content>

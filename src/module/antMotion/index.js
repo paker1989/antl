@@ -5,14 +5,15 @@ import { Layout, Typography, Row, Col, Tabs } from "antd";
 // import NavData from "../../assets/navData";
 import TabContent from "./tabContent";
 import tabsProps from "../../assets/tabs.animate";
-
+// import { Switch, Redirect } from "react-router-dom";
+import "rc-texty/assets/index.css";
 import "./index.less";
 
 const { Header, Content } = Layout;
 const { Title } = Typography;
 const { TabPane } = Tabs;
 
-export default () => {
+export default ({ match }) => {
   return (
     <Layout className="container">
       <Header className="header">

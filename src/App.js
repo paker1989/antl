@@ -24,13 +24,13 @@ function App() {
       <Switch>
         <Route
           path="/comp"
-          render={() => (
+          render={({ match }) => (
             <Layout style={{ minHeight: "900px" }}>
               <Header className="app-header"></Header>
               {/* to customize later */}
               <Layout style={{ position: "relative", height: "100%" }}>
                 <SideNav navData={NavData} defaultOpenKeys={["组件"]} defaultSelectedKeys={["Menu"]}/>
-                <Container />
+                <Container match={match} />
               </Layout>
             </Layout>
           )}

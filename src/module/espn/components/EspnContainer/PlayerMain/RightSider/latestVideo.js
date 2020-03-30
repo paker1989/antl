@@ -1,10 +1,7 @@
 import React from "react";
-import { Card, List, Icon, Typography } from "antd";
+import { Card, List, Icon } from "antd";
 
 import "./rightSider.less";
-// import Paragraph from "antd/lib/skeleton/Paragraph";
-
-const { Paragraph } = Typography;
 
 const videoSourceProps = [
   { title: "Is Giannis or LeBron leading the MVP race?", length: "1:20" },

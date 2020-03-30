@@ -2,7 +2,7 @@
 // const _ANIMATE_PREFIX = 'animate';
 
 export function getFullPath(prefix, link) {
-    // console.log(`/prefi/${link}`);
+    // console.log(`/${prefix}/${link}`);
     return `/${prefix}/${link}`;
 }
 
