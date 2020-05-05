@@ -1,0 +1,104 @@
+@import "../index.theme.less";
+
+@arrow-height: 80px;
+
+.arrow-banner-anim {
+  position: relative;
+  width: 800px;
+  height: 250px;
+  overflow: hidden;
+
+  .bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .arrow-element-anim {
+    position: relative;
+    height: 100%;
+    text-align: center;
+  }
+
+  .main-title {
+    position: relative;
+    font-size: 34px;
+    color: #fff;
+    top: 40%;
+  }
+
+  .sub-title {
+    position: relative;
+    font-size: 17px;
+    color: #fff;
+    top: 40%;
+  }
+
+  .arrow-thumb {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    text-align: center;
+
+    .thumb-item {
+      cursor: pointer;
+      display: inline-block;
+      width: 50px;
+      height: 30px;
+      margin: 5px;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .custom-arrow {
+    position: absolute;
+    height: @arrow-height;
+    top: 50%;
+    margin-top: -@arrow-height / 2;
+    cursor: pointer;
+
+    .arrow-wrapper {
+      position: relative;
+
+      .arrow-icon {
+        position: relative;
+        width: 20px;
+        height: 80px;
+        background: rgba(0, 0, 0, 0.3);
+      }
+
+      .img-wrapper {
+        position: relative;
+        width: 120px;
+        height: 80px;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    &.prev {
+      .arrow-icon {
+        float: right;
+      }
+      .img-wrapper {
+        float: left;
+      }
+    }
+
+    &.next {
+      .arrow-icon {
+        float: left;
+      }
+      .img-wrapper {
+        float: right;
+      }
+    }
+  }
+}

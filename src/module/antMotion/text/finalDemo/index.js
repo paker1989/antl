@@ -10,7 +10,7 @@ export default class Demo extends React.Component {
   state = {
     show: true,
   }
-  geInterval = (e) => {
+  getInterval = (e) => {
     switch (e.index) {
       case 0:
         return 0;
@@ -76,25 +76,25 @@ export default class Demo extends React.Component {
                 <TweenOne
                   animation={[
                     { x: 158, type: 'from', ease: 'easeInOutQuint', duration: 600 },
-                    // { x: -158, ease: 'easeInOutQuart', duration: 450, delay: -150 },
+                    { x: -158, ease: 'easeInOutQuart', duration: 450, delay: -150 },
                   ]}
                 />
               </div>
-              {/* <div className="shape-right">
+              <div className="shape-right">
                 <TweenOne
                   animation={[
                     { x: -158, type: 'from', ease: 'easeInOutQuint', duration: 600 },
                     { x: 158, ease: 'easeInOutQuart', duration: 450, delay: -150 },
                   ]}
                 />
-              </div> */}
+              </div>
             </div>
             <Texty
               className="title"
               type="mask-top"
               delay={400}
               enter={this.getEnter}
-              interval={this.geInterval}
+              interval={this.getInterval}
               component={TweenOne}
               componentProps={{
                 animation: [

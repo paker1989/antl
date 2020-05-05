@@ -4,7 +4,7 @@ import { Button, Typography, Row, Col, Tag } from "antd";
 
 import Custom from "./custom";
 import FinalDemo from "./finalDemo";
-import FinalPresentation from './finalPresentation';
+import FinalPresentation from "./finalPresentation";
 
 import "./text.less";
 
@@ -140,7 +140,13 @@ export default () => {
       </Row>
       <Row>
         <Col span={12}>
-          <FinalPresentation/>
+          <Paragraph>
+            <Tag>getSplit</Tag>
+            <Tag>interval</Tag>
+            <Tag>Texty: component=TweenOne</Tag>
+            <Tag>Texty: componentProps=animationProps</Tag>
+          </Paragraph>
+          <FinalPresentation />
         </Col>
       </Row>
     </div>

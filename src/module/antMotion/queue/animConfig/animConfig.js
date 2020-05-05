@@ -22,9 +22,7 @@ export default () => {
       <Paragraph>
         通过 <Text code>animConfig</Text> 来自定义动画进出场。
       </Paragraph>
-      <Paragraph>
-        
-      </Paragraph>
+      <Paragraph></Paragraph>
       <Button
         type="primary"
         style={{ marginBottom: 30 }}
@@ -38,8 +36,13 @@ export default () => {
         delay={300}
         className="demo-content"
         animConfig={[
-          { opacity: [1, 0], translateX: [0, 50] },
-          { opacity: [1, 0], scaleX: [1, 0.3] }
+          { opacity: [1, 0], translateX: [0, 200], scale: [1, .5] },
+          {
+            opacity: [1, 0],
+            scaleX: [1, 0.6],
+            transformOrigin: "left",
+            duration: "450"
+          }
         ]}
       >
         {show

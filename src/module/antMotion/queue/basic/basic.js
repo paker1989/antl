@@ -66,6 +66,7 @@ export default () => {
               delay={300}
               className="demo-content"
               type={["top", "right"]}
+              // animConfig={[{ transform:['scale(.4)', 'scale(1)'] }, { opacity:[1, 0] }]}
             >
               {show
                 ? [

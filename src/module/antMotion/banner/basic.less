@@ -1,0 +1,124 @@
+@import "../index.theme.less";
+
+/* 通用样式, 下例 demo 单独使用都需要这块样式 */
+.banner-anim {
+  position: relative;
+  overflow: hidden;
+  min-height: 100px;
+}
+
+.banner-user {
+  height: 220px;
+}
+.banner-user-elem {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+.banner-user-elem .banner-user-title {
+  font-size: 32px;
+  top: 40%;
+}
+.banner-user-elem .banner-user-text {
+  top: 40%;
+}
+.banner-anim-elem .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.banner-anim-arrow-default {
+  position: absolute;
+  width: 20px;
+  height: 60px;
+  margin-top: -30px;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.banner-anim-arrow {
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+
+  &.next {
+    right: 0;
+  }
+}
+
+.banner-anim-thumb-default {
+  height: 40px;
+  line-height: 40px;
+
+  span {
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    margin: 0 5px;
+    background: rgba(102, 102, 102, 0.35);
+    transition: background 0.3s;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    &.active {
+      background-color: #fff;
+    }
+  }
+}
+
+.banner-anim-thumb {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+  z-index: 10;
+
+  & > span {
+    pointer-events: auto;
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
+  }
+}
+
+// custom.js
+.custom-banner-anim {
+  position: relative;
+  width: 800px;
+  height: 200px;
+  overflow: hidden;
+
+  .bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .custom-element-anim {
+    position: relative;
+    height: 100%;
+    text-align: center;
+  }
+
+  .main-title {
+    position: relative;
+    font-size: 34px;
+    color: #fff;
+    top: 40%;
+  }
+
+  .sub-title {
+    position: relative;
+    font-size: 17px;
+    color: #fff;
+    top: 40%;
+  }
+}
