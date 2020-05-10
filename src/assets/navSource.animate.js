@@ -90,5 +90,15 @@ export default {
       link: "switchImage",
       source: lazy(() => import("../module/antMotion/general/switchImage")),
     },
+    {
+      title: "general-addList",
+      link: "addList",
+      source: lazy(() => import("../module/antMotion/general/addList/addDivList")),
+    },
+    {
+      title: "general-swiper",
+      link: "swiper",
+      source: lazy(() => import("../module/antMotion/general/swiper")),
+    },
   ],
 };

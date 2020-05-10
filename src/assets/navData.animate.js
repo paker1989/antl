@@ -69,6 +69,16 @@ export default {
   },
   general: {
     title: "范例",
-    items: [{ title: "图片切换", link: "general/switchImage" }],
+    items: [
+      { title: "图片切换", link: "general/switchImage" },
+      {
+        title: "增删列表",
+        link: "general/addList",
+      },
+      {
+        title: "详细说明切换",
+        link: "general/swiper",
+      },
+    ],
   },
 };
